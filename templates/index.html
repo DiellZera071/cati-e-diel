@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cati & Diel ❤️</title>
-    <!-- Fonte elegante e romântica do Google Fonts -->
+    <!-- Fontes românticas e elegantes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     
     <style>
         :root {
-            --bg-lilac: #e8dff5;
+            --bg-lilac: #e3d7f4;
             --card-white: #ffffff;
-            --text-color: #4a3e56;
-            --accent-purple: #9d81ba;
-            --accent-hover: #8363a3;
-            --shadow: 0 10px 30px rgba(157, 129, 186, 0.2);
+            --text-color: #4a3b5c;
+            --accent-purple: #8e68b8;
+            --soft-purple: #f3ebfc;
+            --shadow: 0 10px 25px rgba(142, 104, 184, 0.15);
         }
 
         * {
@@ -29,20 +29,19 @@
             font-family: 'Poppins', sans-serif;
             background-color: var(--bg-lilac);
             color: var(--text-color);
-            line-height: 1.6;
+            line-height: 1.7;
             overflow-x: hidden;
-            position: relative;
         }
 
-        /* Corações decorativos de fundo */
+        /* Corações Caindo */
         .heart-bg {
             position: fixed;
             top: -10px;
             font-size: 20px;
-            color: rgba(255, 255, 255, 0.6);
+            color: rgba(255, 255, 255, 0.7);
             user-select: none;
             pointer-events: none;
-            animation: fall 8s linear infinite;
+            animation: fall 9s linear infinite;
             z-index: 0;
         }
 
@@ -59,37 +58,107 @@
             z-index: 1;
         }
 
-        /* Cabecalho */
+        /* Cabeçalho */
         header {
             text-align: center;
-            padding: 40px 20px;
+            padding: 45px 20px;
             background: var(--card-white);
-            border-radius: 20px;
+            border-radius: 24px;
             box-shadow: var(--shadow);
-            margin-bottom: 40px;
+            margin-bottom: 35px;
         }
 
         header h1 {
             font-family: 'Great Vibes', cursive;
-            font-size: 3.8rem;
+            font-size: 4rem;
             color: var(--accent-purple);
-            margin-bottom: 10px;
+            margin-bottom: 5px;
         }
 
         header p {
             font-size: 1.1rem;
+            color: #6b5880;
             font-weight: 300;
-            color: #6c5b7b;
         }
 
-        /* Contador de Tempo */
-        .timer-card {
+        /* Foto em Destaque (Primeiro Encontro) */
+        .featured-card {
             background: var(--card-white);
             padding: 30px;
+            border-radius: 24px;
+            box-shadow: var(--shadow);
+            margin-bottom: 35px;
+            text-align: center;
+            border: 2px solid var(--accent-purple);
+        }
+
+        .featured-card h2 {
+            font-size: 1.8rem;
+            color: var(--accent-purple);
+            margin-bottom: 20px;
+        }
+
+        .featured-img-container {
+            max-width: 420px;
+            margin: 0 auto 20px auto;
             border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        .featured-img-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .featured-card p {
+            font-size: 1.1rem;
+            color: #524166;
+            max-width: 650px;
+            margin: 0 auto;
+            font-weight: 500;
+        }
+
+        /* Passagem Bíblica */
+        .verse-card {
+            background: var(--card-white);
+            padding: 35px;
+            border-radius: 24px;
             box-shadow: var(--shadow);
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 35px;
+            border-left: 5px solid var(--accent-purple);
+        }
+
+        .verse-card h2 {
+            font-size: 1.4rem;
+            color: var(--accent-purple);
+            margin-bottom: 15px;
+        }
+
+        .verse-card blockquote {
+            font-style: italic;
+            font-size: 1.05rem;
+            color: #58466b;
+            margin-bottom: 10px;
+        }
+
+        .verse-card cite {
+            display: block;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--accent-purple);
+        }
+
+        /* Contador */
+        .timer-card {
+            background: var(--card-white);
+            padding: 35px;
+            border-radius: 24px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            margin-bottom: 35px;
         }
 
         .timer-card h2 {
@@ -107,9 +176,9 @@
         }
 
         .timer-box {
-            background: var(--bg-lilac);
+            background: var(--soft-purple);
             padding: 15px 10px;
-            border-radius: 12px;
+            border-radius: 16px;
         }
 
         .timer-box span {
@@ -120,18 +189,18 @@
         }
 
         .timer-box label {
-            font-size: 0.85rem;
-            color: #6c5b7b;
+            font-size: 0.8rem;
+            color: #725e87;
             text-transform: uppercase;
         }
 
-        /* Secoes Gerais */
+        /* Seções */
         section {
             background: var(--card-white);
-            padding: 35px 25px;
-            border-radius: 20px;
+            padding: 35px;
+            border-radius: 24px;
             box-shadow: var(--shadow);
-            margin-bottom: 40px;
+            margin-bottom: 35px;
         }
 
         section h2 {
@@ -139,14 +208,6 @@
             color: var(--accent-purple);
             text-align: center;
             margin-bottom: 25px;
-            position: relative;
-        }
-
-        section h2::after {
-            content: '♥️';
-            display: block;
-            font-size: 1rem;
-            margin-top: 5px;
         }
 
         /* Galeria de Fotos */
@@ -157,21 +218,19 @@
         }
 
         .photo-card {
-            background: #fff;
-            border: 1px solid #f0e6fa;
-            border-radius: 15px;
+            background: var(--soft-purple);
+            border-radius: 18px;
             overflow: hidden;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transition: transform 0.3s ease;
         }
 
         .photo-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
         }
 
         .photo-card img {
             width: 100%;
-            height: 220px;
+            height: 230px;
             object-fit: cover;
             display: block;
         }
@@ -179,11 +238,11 @@
         .photo-card p {
             padding: 15px;
             font-size: 0.95rem;
-            color: #5a4b6e;
+            color: #524166;
             text-align: center;
         }
 
-        /* Players de Musica */
+        /* Músicas */
         .music-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -191,9 +250,9 @@
         }
 
         .music-card {
-            background: var(--bg-lilac);
+            background: var(--soft-purple);
             padding: 20px;
-            border-radius: 15px;
+            border-radius: 18px;
             text-align: center;
         }
 
@@ -205,10 +264,11 @@
 
         .video-container {
             position: relative;
-            padding-bottom: 56.25%; /* Proporcao 16:9 */
+            padding-bottom: 56.25%;
             height: 0;
             overflow: hidden;
-            border-radius: 10px;
+            border-radius: 12px;
+            background: #000;
         }
 
         .video-container iframe {
@@ -217,15 +277,15 @@
             left: 0;
             width: 100%;
             height: 100%;
-            border: none;
+            border: 0;
         }
 
-        /* Rodape */
+        /* Rodapé */
         footer {
             text-align: center;
             padding: 25px;
             background: var(--card-white);
-            border-radius: 20px;
+            border-radius: 24px;
             box-shadow: var(--shadow);
             font-size: 1.05rem;
             color: var(--accent-purple);
@@ -235,7 +295,7 @@
 </head>
 <body>
 
-    <!-- Coracoes de fundo -->
+    <!-- Animação dos Corações -->
     <div class="heart-bg" style="left: 10%; animation-delay: 0s;">🌸</div>
     <div class="heart-bg" style="left: 25%; animation-delay: 2s;">💖</div>
     <div class="heart-bg" style="left: 50%; animation-delay: 4s;">✨</div>
@@ -243,11 +303,29 @@
     <div class="heart-bg" style="left: 85%; animation-delay: 3s;">🤍</div>
 
     <div class="container">
-        <!-- Cabecalho -->
+        <!-- Cabeçalho -->
         <header>
             <h1>Cati & Diel</h1>
-            <p>A nossa história guardada em um só lugar ✨</p>
+            <p>O nosso amor guardado em um só lugar ✨</p>
         </header>
+
+        <!-- Foto de Destaque (Primeiro Encontro) -->
+        <div class="featured-card">
+            <h2>{{ featured_photo.title }}</h2>
+            <div class="featured-img-container">
+                <img src="{{ url_for('static', filename='photos/' + featured_photo.file) }}" alt="Nosso Primeiro Encontro">
+            </div>
+            <p>{{ featured_photo.caption }}</p>
+        </div>
+
+        <!-- Mensagem Bíblica -->
+        <div class="verse-card">
+            <h2>Palavra sobre o Amor</h2>
+            <blockquote>
+                "Assim também os maridos devem amar a sua esposa como ao seu próprio corpo. Quem ama a sua esposa, ama a si mesmo. Portanto, cada um de vocês ame a sua esposa como a si mesmo."
+            </blockquote>
+            <cite>— Efésios 5:28,33</cite>
+        </div>
 
         <!-- Contador -->
         <div class="timer-card">
@@ -262,7 +340,7 @@
 
         <!-- Galeria de Fotos -->
         <section>
-            <h2>Nossas Memórias</h2>
+            <h2>Nossas Memórias 📸</h2>
             <div class="gallery-grid">
                 {% for photo in photos %}
                 <div class="photo-card">
@@ -273,16 +351,17 @@
             </div>
         </section>
 
-        <!-- Musicas -->
+        <!-- Músicas -->
         <section>
-            <h2>Nossas Músicas</h2>
+            <h2>Nossas Músicas 🎵</h2>
             <div class="music-grid">
                 {% for song in songs %}
                 <div class="music-card">
                     <h3>{{ song.title }}</h3>
                     <div class="video-container">
                         <iframe 
-                            src="https://www.youtube.com/embed/{{ song.youtube_id }}" 
+                            src="https://www.youtube-nocookie.com/embed/{{ song.youtube_id }}" 
+                            title="{{ song.title }}"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                             allowfullscreen>
                         </iframe>
@@ -292,13 +371,13 @@
             </div>
         </section>
 
-        <!-- Rodape -->
+        <!-- Rodapé Personalizado -->
         <footer>
             Feito com amor para Cati, pelo o seu branquinho.
         </footer>
     </div>
 
-    <!-- Script da contagem de tempo -->
+    <!-- Script de Contagem de Tempo -->
     <script>
         const START_DATE = new Date("2026-06-16T00:00:00-03:00");
 
