@@ -14,15 +14,15 @@ PHOTOS = [
     {"file": "08_nos.jpg", "caption": "Que venham muitos outros capítulos."},
 ]
 
-# Músicas com os IDs do YouTube para rodar direto no site
+# Músicas com os IDs limpos do YouTube
 SONGS = [
     {
-        "title": "Nossa Música #1",
-        "youtube_id": "Szjx8Rw4UXo&list=RDSzjx8Rw4UXo&start_radio=1"  # Substitua pelo ID do seu primeiro vídeo do YouTube
+        "title": "A música que ela ama 🤍",
+        "youtube_id": "hda5v8tFM28"
     },
     {
-        "title": "Nossa Música #2",
-        "youtube_id": "hda5v8tFM28&list=RDhda5v8tFM28&start_radio=1"  # Substitua pelo ID do seu segundo vídeo do YouTube
+        "title": "A nossa música ❤️",
+        "youtube_id": "Szjx8Rw4UXo"
     }
 ]
 
