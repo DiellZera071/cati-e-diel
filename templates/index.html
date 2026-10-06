@@ -7,7 +7,7 @@
     <!-- Fontes românticas e elegantes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     
     <style>
         :root {
@@ -16,6 +16,7 @@
             --text-color: #4a3b5c;
             --accent-purple: #8e68b8;
             --soft-purple: #f3ebfc;
+            --paper-bg: #fffcf8;
             --shadow: 0 10px 25px rgba(142, 104, 184, 0.15);
         }
 
@@ -280,6 +281,64 @@
             border: 0;
         }
 
+        /* Carta Virtual */
+        .letter-card {
+            background: var(--paper-bg);
+            padding: 45px 35px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            border: 1px solid #ebdcf7;
+            position: relative;
+            margin-bottom: 35px;
+        }
+
+        .letter-card::before {
+            content: '✉️';
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 30px;
+            background: var(--card-white);
+            padding: 5px 15px;
+            border-radius: 50px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        .letter-title {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.3rem;
+            color: var(--accent-purple);
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .letter-body p {
+            font-size: 1.05rem;
+            color: #4a3e56;
+            margin-bottom: 18px;
+            text-align: justify;
+            line-height: 1.8;
+        }
+
+        .letter-highlight {
+            font-style: italic;
+            background: #f4ecfd;
+            padding: 15px 20px;
+            border-radius: 12px;
+            border-left: 4px solid var(--accent-purple);
+            margin: 20px 0 !important;
+            font-weight: 500;
+        }
+
+        .letter-footer {
+            margin-top: 30px;
+            text-align: right;
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.8rem;
+            color: var(--accent-purple);
+        }
+
         /* Rodapé */
         footer {
             text-align: center;
@@ -322,9 +381,9 @@
         <div class="verse-card">
             <h2>Palavra sobre o Amor</h2>
             <blockquote>
-                "Assim também os maridos devem amar a sua esposa como ao seu próprio corpo. Quem ama a sua esposa, ama a si mesmo. Portanto, cada um de vocês ame a sua esposa como a si mesmo."
+                "Maridos, amei a vossa mulher, como também Cristo amou a igreja e a si mesmo se entregou por ela."
             </blockquote>
-            <cite>— Efésios 5:28,33</cite>
+            <cite>— Efésios 5:25</cite>
         </div>
 
         <!-- Contador -->
@@ -370,6 +429,30 @@
                 {% endfor %}
             </div>
         </section>
+
+        <!-- Carta Virtual -->
+        <div class="letter-card">
+            <h2 class="letter-title">Para você, minha Pretinha ❤️</h2>
+            <div class="letter-body">
+                <p>Talvez o cinema nunca tenha imaginado que, em meio a tantos filmes e histórias de amor, eu viveria uma história que seria tão especial para mim.</p>
+                
+                <p>Lembro do nosso primeiro beijo… daquele momento em que tudo pareceu parar por alguns segundos. Foi ali que eu percebi que tinha me apaixonado por você. E, depois daquele beijo, eu simplesmente não consegui mais te deixar sair do meu coração.</p>
+                
+                <p>Desde então, você conquistou um espaço que é só seu. E pode passar o tempo que for, podem existir milhares de pessoas no mundo… ninguém vai ocupar o lugar que você conquistou em mim.</p>
+                
+                <p>Eu ainda tenho um dos dias mais importantes da minha vida esperando para acontecer: o dia em que eu vou olhar nos seus olhos e te pedir oficialmente em namoro. Talvez você nem imagine o quanto eu espero por esse momento. Porque eu quero poder mostrar para o mundo inteiro o quanto eu amo você e o quanto tenho certeza de que é você quem eu quero ao meu lado.</p>
+                
+                <p>Quero viver nossos filmes, nossas risadas, nossas fases boas e até os momentos difíceis. Quero construir uma história que não precise de um “fim”, porque o meu desejo é que ela continue até o último capítulo das nossas vidas.</p>
+                
+                <p class="letter-highlight">E quando chegar esse dia, eu quero poder dizer, com toda a certeza do mundo:<br><strong>“Foi naquele primeiro beijo que eu me apaixonei… e desde então, nunca mais quis largar você.”</strong></p>
+                
+                <p>Eu te amo, minha Preta. ❤️<br>E se depender de mim, é você até que a morte nos separe.</p>
+            </div>
+            <div class="letter-footer">
+                Com todo o amor do mundo,<br>
+                Do seu branquinho.
+            </div>
+        </div>
 
         <!-- Rodapé Personalizado -->
         <footer>
