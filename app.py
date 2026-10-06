@@ -2,6 +2,7 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
+# Fotos do carrossel/galeria
 PHOTOS = [
     {"file": "01_nos.jpg", "caption": "O nosso começo, do jeitinho que eu guardaria para sempre."},
     {"file": "02_nos.jpg", "caption": "Dois sorrisos, uma história e tantos momentos pela frente."},
@@ -13,9 +14,21 @@ PHOTOS = [
     {"file": "08_nos.jpg", "caption": "Que venham muitos outros capítulos."},
 ]
 
+# Músicas com os IDs do YouTube para rodar direto no site
+SONGS = [
+    {
+        "title": "Nossa Música #1",
+        "youtube_id": "Szjx8Rw4UXo&list=RDSzjx8Rw4UXo&start_radio=1"  # Substitua pelo ID do seu primeiro vídeo do YouTube
+    },
+    {
+        "title": "Nossa Música #2",
+        "youtube_id": "hda5v8tFM28&list=RDhda5v8tFM28&start_radio=1"  # Substitua pelo ID do seu segundo vídeo do YouTube
+    }
+]
+
 @app.route("/")
 def index():
-    return render_template("index.html", photos=PHOTOS)
+    return render_template("index.html", photos=PHOTOS, songs=SONGS)
 
 if __name__ == "__main__":
     app.run(debug=True)
