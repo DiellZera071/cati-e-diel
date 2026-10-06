@@ -2,7 +2,14 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-# Fotos do carrossel/galeria
+# Nova foto em destaque no topo (Primeiro Encontro no Shopping)
+FEATURED_PHOTO = {
+    "file": "01_primeiro_encontro.jpg",
+    "title": "Nosso Primeiro Encontro ❤️",
+    "caption": "A nossa primeira foto juntos! O dia em que nos vimos pela primeira vez, fomos ao shopping e assistimos Toy Story no cinema. O começo de tudo!"
+}
+
+# Todas as suas fotos originais mantidas sem mexer
 PHOTOS = [
     {"file": "01_nos.jpg", "caption": "O nosso começo, do jeitinho que eu guardaria para sempre."},
     {"file": "02_nos.jpg", "caption": "Dois sorrisos, uma história e tantos momentos pela frente."},
@@ -14,7 +21,7 @@ PHOTOS = [
     {"file": "08_nos.jpg", "caption": "Que venham muitos outros capítulos."},
 ]
 
-# Músicas com os IDs limpos do YouTube
+# Músicas com IDs do YouTube
 SONGS = [
     {
         "title": "A música que ela ama 🤍",
@@ -28,7 +35,7 @@ SONGS = [
 
 @app.route("/")
 def index():
-    return render_template("index.html", photos=PHOTOS, songs=SONGS)
+    return render_template("index.html", featured_photo=FEATURED_PHOTO, photos=PHOTOS, songs=SONGS)
 
 if __name__ == "__main__":
     app.run(debug=True)
